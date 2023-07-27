@@ -542,12 +542,12 @@ video {
   top: 0px;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .z-0 {
   z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -571,12 +571,16 @@ video {
   display: none;
 }
 
+.max-h-0 {
+  max-height: 0px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-12 {
-  width: 3rem;
+.min-h-0 {
+  min-height: 0px;
 }
 
 .w-1\/2 {
@@ -589,10 +593,6 @@ video {
 
 .max-w-md {
   max-width: 28rem;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .flex-col-reverse {
@@ -621,14 +621,46 @@ video {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.bg-teal-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-teal-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+
+.bg-teal-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -643,14 +675,14 @@ video {
   text-align: center;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-4xl {
@@ -658,27 +690,17 @@ video {
   line-height: 2.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.font-medium {
-  font-weight: 500;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-slate-900 {
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
+.font-medium {
+  font-weight: 500;
 }
 
 .text-indigo-700 {
@@ -691,12 +713,47 @@ video {
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
-.opacity-80 {
-  opacity: 0.8;
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-2 {
+  outline-width: 2px;
+}
+
+.outline-4 {
+  outline-width: 4px;
 }
 
 .hover\:opacity-80:hover {
   opacity: 0.8;
+}
+
+.hover\:outline:hover {
+  outline-style: solid;
+}
+
+.hover\:outline-dashed:hover {
+  outline-style: dashed;
+}
+
+.focus\:border:focus {
+  border-width: 1px;
+}
+
+.focus\:border-blue-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -706,6 +763,22 @@ video {
 
 .focus\:outline:focus {
   outline-style: solid;
+}
+
+.focus\:outline-dashed:focus {
+  outline-style: dashed;
+}
+
+.focus\:outline-dotted:focus {
+  outline-style: dotted;
+}
+
+.focus\:outline-double:focus {
+  outline-style: double;
+}
+
+.focus\:outline-white:focus {
+  outline-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -719,11 +792,6 @@ video {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
   .dark\:text-indigo-300 {
     --tw-text-opacity: 1;
     color: rgb(165 180 252 / var(--tw-text-opacity));
@@ -732,6 +800,11 @@ video {
   .dark\:text-slate-400 {
     --tw-text-opacity: 1;
     color: rgb(148 163 184 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
 
@@ -750,10 +823,6 @@ video {
 
   .sm\:w-1\/2 {
     width: 50%;
-  }
-
-  .sm\:w-1 {
-    width: 0.25rem;
   }
 
   .sm\:flex-row {
